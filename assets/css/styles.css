@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #404040;
+  ;
+}
+
+
+strong {
+  font-weight: 800;
+  color: #fff;
+}
+
+h1 {
+  color: #fff;
+  font-size: 1.7rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+.intro {
+
+  background-image: url('../images/intro-bg.png');
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+  padding-inline: 2em;
+}
+
+.intro p {
+  order: -1;
+  color: #fff;
+  border-top: #fff solid 3px;
+  text-transform: uppercase;
+  font-size: .8rem;
+  font-weight: 700;
+  margin-top: .5em;
+}
+
+.beta-text {
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 1em;
+  font-size: .8rem;
+  font-weight: 700;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2em;
+}
+
+.img-main {
+  width: 30%;
+  border-radius: 50%;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+.subheading {
+  /*  color: #575757; */
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: .8rem;
+}
+
+.main-content p {
+  font-size: 1rem;
+  margin-block: 1em;
+}
+
+.main-content p:last-of-type {
+  font-size: .7rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  width: 100%;
+}
+
+form input {
+  width: 100%;
+  line-height: 1.5;
+  padding-inline: .5em;
+}
+
+form input:last-of-type {
+  padding-inline: 0;
+}
+
+form input:focus,
+form input:hover {
+  background-color: #f5d3b8;
+
+}
+
+form button {
+  background-color: #9580e5;
+  border: none;
+  color: #fff;
+  line-height: 1.5;
+  font-weight: 700;
+  padding-block: .5em;
+  text-transform: uppercase;
+
+}
+
+form button:focus,
+form button:hover {
+  background-color: #fff;
+  color: #9580e5;
+  border: 2px solid #9580e5;
+
+}
+
+@media (min-width:650px) {
+  body {
+    display: flex;
+    height: 100vh;
+  }
+
+  .intro {
+    flex: 1;
+    justify-content: space-between;
+  }
+
+  .main-content {
+    flex: 1;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+}
